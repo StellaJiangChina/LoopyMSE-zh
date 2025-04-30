@@ -28,17 +28,17 @@ LoopyMSE 需要一个 Loopy BIOS 文件，并且为了实现声音模拟，还�
 - 在 Windows 系统中，您可以将 .loopy 文件扩展名与 LoopyMSE 关联。
 - 它可以通过命令行启动。在 macOS 和 Linux 系统中，您可以通过这种方式查看日志信息。
 
-Launching via command line:
-- On MacOS, the binary is in `LoopyMSE.app/Contents/MacOS/LoopyMSE`.
-- Use `LoopyMSE --help` for information on commandline parameters.
+通过命令行启动:
+- MacOS下, 二进制文件位于 `LoopyMSE.app/Contents/MacOS/LoopyMSE`.
+- 使用 `LoopyMSE --help` 来获取有关命令行参数的信息。
 
-## Playing Loopy My Seal Emulator
+## 如何控制Loopy My Seal模拟器
 
-You can use the keyboard or a gamepad / controller to emulate controller input. The Loopy Mouse is not yet emulated.
+您可以使用键盘或游戏手柄/控制器来模拟控制器输入，但目前尚未支持 Loopy 鼠标的模拟功能。
 
-Default controls (remap in `loopymse.ini`):
+默认控制映射 (在`loopymse.ini`中重映射):
 
-| Loopy | Keyboard |
+| Loopy控制器 | 键盘 |
 | ----- | -------- |
 | A     | Z        |
 | B     | X        |
@@ -46,19 +46,19 @@ Default controls (remap in `loopymse.ini`):
 | D     | V        |
 | L     | A        |
 | R     | S        |
-| Start | Enter    |
+| Start | 回车    |
 
-Additionally, these special functions are available.
+还支持这些额外功能：
 
-| Function    | Key |
+| 功能    | 按键 |
 | ----------- | --- |
-| Screenshot  | F10 |
-| Fullscreen  | F11 |
-| Reboot      | F12 |
-| Exit        | Esc |
+| 截图  | F10 |
+| 全屏  | F11 |
+| 重启      | F12 |
+| 退出        | Esc |
 
-Screenshots are saved in the same directory as the loaded ROM, or in the same directory as `loopymse.ini` if the ROM directory is not available for some reason.
-Currently, screenshots are saved in .bmp format only, and with a unique file name that contains the date and time, prefixed with `loopymse_`.
+截图将保存在加载的 ROM 文件所在的目录中。如果因某些原因 ROM 目录无法使用，则会保存在 loopymse.ini 配置文件所在的目录中。
+目前，截图仅以 `.bmp` 格式保存，并且文件名是唯一的，包含日期和时间，以 `loopymse_` 为前缀。
 
 ## Printing
 
