@@ -1,14 +1,6 @@
 # LoopyMSE-zh
 Casio Loopy模拟器。目前仍在开发中，已可运行商业游戏并支持音效。
 
-Features:
-- Runs all commercial games including Magical Shop
-- Sound emulation
-- High-level printer emulation
-- High-level PCM expansion audio emulation
-- Controller support
-- Available on Mac, Win, Linux
-
 功能特性：
 - 支持运行所有商业游戏，包括《Magical Shop》。
 - 支持声音。
