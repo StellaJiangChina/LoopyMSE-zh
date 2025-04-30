@@ -12,14 +12,14 @@ Casio Loopy模拟器。目前仍在开发中，已可运行商业游戏并支持
 TODO:
 - 鼠标模拟
 
-## Builds
+## 发行版
 
-[Github Actions](../../actions/) 为Linux、Windows、MacOS Intel和MacOS ARM64提供最新的编译版本。
+[Github Actions](../../actions/) 为Linux、Windows、MacOS Intel和MacOS ARM64提供最新的编译发行版本。
 
-## Usage
+## 说明书
 
-See the [Readme](assets/README.md) (included in builds).
+参见 [Readme](assets/README.md) (included in builds).
 
-## Special Thanks
+## 特别鸣谢
 kasami - 声音和打印机功能的实现，Dump BIOS固件，硬件测试，许多有价值的非代码形式的贡献。
 UBCH server - 翻译和精神支持
