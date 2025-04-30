@@ -62,27 +62,33 @@ LoopyMSE 需要一个 Loopy BIOS 文件，并且为了实现声音模拟，还�
 
 ## Printing
 
-LoopyMSE has basic printer emulation for the most common types of seals. When a game tries to print a supported type, it will be saved as an image.
-The location and file name of the saved image are similar to screenshots, but prefixed with `print_`.
-On supported systems, the image is automatically opened with the associated application.
+LoopyMSE 提供了对最常见印章类型的打印机模拟功能。当游戏尝试打印受支持的印章类型时，该印章图像将被自动保存。  
 
-Seals are printed at pixel-perfect scale, which means they are technically the wrong aspect ratio.
-If you want to scale them to correct for this, aim for an 8:7 relative ratio, resulting in *approximately* 4:3 total.
-For example a 256x224 seal looks good if first doubled to 512x448 with nearest-neighbor and then stretched to 585x448 with bilinear/bicubic.
+保存的图像文件位置和命名方式与截图类似，但文件名以 `print_` 开头。  
 
-If an image file can't be created, LoopyMSE reports a general printing failure to the game, and the game should handle it appropriately.
-A general failure is also reported if a game tries to print an unsupported seal type.
-Printing is implemented at a high level by interpreting data sent to the BIOS, so the supported types depend on currently understood data formats.
+在支持的系统中，保存的图像会自动通过关联的应用程序打开。
+
+印章以像素级精确的比例打印，这意味着它们在技术上存在错误的宽高比。
+
+如果您希望调整比例以纠正这一点，可以将它们按 **8:7** 的相对比例进行缩放，最终结果将 **接近 4:3** 的宽高比。
+
+例如，一个 256x224 像素的印章，如果先通过最近邻算法放大到 512x448，然后再通过双线性或双三次算法拉伸到 585x448，效果会更好。
+
+如果无法创建图像文件，LoopyMSE 会向游戏报告打印失败的通用错误，游戏应对此进行适当处理。
+
+如果游戏尝试打印不受支持的印章类型，也会报告类似的通用错误。
+
+打印功能是通过解析发送到 BIOS 的数据在较高层次上实现的，因此支持的印章类型取决于当前已解析的数据格式。
 
 ## MacOS Security
 
-LoopyMSE is not signed or notarized, so you will only be able to run it if you "Allow Applications From App Store & Known Developers" in System Preferences > Privacy & Security.
+LoopyMSE 没有签名或经过苹果官方认证，因此您只能在“系统偏好设置”>“隐私与安全性”中选择“允许来自 Mac App Store 和已知开发者的应用程序”时才能运行它。
 
-If the system says "Apple could not verify “LoopyMSE.app” is free of malware that may harm your Mac or compromise your privacy.", click "Done", open System Preferences > Privacy & Security and click "Open Anyway" and then "Open Anyway" again.
+如果系统提示“Apple 无法验证‘LoopyMSE.app’是否不含可能危害您的 Mac 或侵犯您隐私的恶意软件”，请单击“完成”，然后打开“系统偏好设置”>“隐私与安全性”，并单击“仍要打开”按钮，再次单击“仍要打开”。
 
-If you download a build from GitHub, MacOS "quarantines" it as an unknown download. If it still cannot run, try clearing the quarantine attribute with `xattr -r -d com.apple.quarantine LoopyMSE.app`.
+如果您从 GitHub 下载了一个构建版本，macOS 会将其视为未知来源的下载并进行“隔离”。如果它仍然无法运行，可以尝试使用以下命令清除隔离属性： `xattr -r -d com.apple.quarantine LoopyMSE.app`.
 
-**Please, only do the above steps if you know what you are doing, and you trust this executable.**
+**请注意，只有在您清楚自己在做什么，并且信任这个可执行文件的情况下，才执行上述步骤。**
 
 ## Wanwan扩展音频包
 
