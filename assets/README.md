@@ -1,22 +1,22 @@
-# Loopy My Seal Emulator
+# Loopy My Seal模拟器
 
-## Prerequisites
+## 所需文件
 
-LoopyMSE requires a Loopy BIOS and, for sound emulation, the Loopy sound BIOS is required. It expects the files to be named bios.bin and soundbios.bin, and looks for them:
+LoopyMSE 需要一个 Loopy BIOS 文件，并且为了实现声音模拟，还需要 Loopy 声音 BIOS 文件。它期望这些文件分别命名为 **bios.bin** 和 **soundbios.bin**，并且会在以下位置查找它们：
 
-- Where the .app or .exe lives,
-- `~/Library/Application Support/PSI/LoopyMSE/` on MacOS
+- app或exe所在的位置：
+- `~/Library/Application Support/PSI/LoopyMSE/`（MacOS）
 
-Or you can provide a different name or an absolute path in your `loopymse.ini` configuration or on the command line.
+或者您可以在 `loopymse.ini` 配置文件中或通过命令行提供不同的文件名或绝对路径。
 
-## Configuration
+## 配置
 
-Find the configuration `loopymse.ini` either:
+配置文件 loopymse.ini 的位置：
 
-- Next to the .exe on Windows
-- In `~/Library/Application Support/PSI/LoopyMSE/` on MacOS (after first run)
+- 与exe文件一个目录
+- In `~/Library/Application Support/PSI/LoopyMSE/` （MacOS版本第一次运行之后）
 
-You can use the settings here to change your keyboard or controller bindings as well as certain options.
+您可以使用此处的设置来更改键盘或控制器的按键绑定，以及某些选项。
 
 ## Running
 
