@@ -18,17 +18,17 @@ LoopyMSE 需要一个 Loopy BIOS 文件，并且为了实现声音模拟，还�
 
 您可以使用此处的设置来更改键盘或控制器的按键绑定，以及某些选项。
 
-## Running
+## 运行
 
-You can run LoopyMSE several ways:
+有以下几种方式:
 
-- Opening the .exe or .app. If the BIOS can be found, you'll get an empty window, into which you can drag a Loopy ROM to play. If nothing happens, it may have failed to find the BIOS.
-- Dragging a Loopy ROM onto the .exe or .app. You can pin the app to your Dock / Taskbar.
-- On MacOS, the .loopy file extension will be associated with LoopyMSE and you can open Loopy ROMs in LoopyMSE by renaming them .loopy and simply opening them.
-- On Windows, you can associate the .loopy file extension with LoopyMSE.
-- It can be launched via the command line. On MacOS and Linux, you can get logging this way.
+- 打开 `.exe` 或 `.app` 文件。如果程序成功找到 BIOS，您将看到一个空白窗口，可以将 Loopy ROM 文件拖拽到该窗口中以加载游戏。如果没有任何反应，可能是因为程序未能找到 BIOS 文件。
+- 将 Loopy ROM 文件拖放到 .exe 或 .app 上。您可以将该应用程序固定到您的Dock（Mac）或任务栏（Windows）
+- 在 macOS 系统中，.loopy 文件扩展名将与 LoopyMSE 关联，您可以通过将 Loopy ROM 文件重命名为 .loopy 扩展名，然后直接打开它们来在 LoopyMSE 中加载这些文件。
+- 在 Windows 系统中，您可以将 .loopy 文件扩展名与 LoopyMSE 关联。
+- 它可以通过命令行启动。在 macOS 和 Linux 系统中，您可以通过这种方式查看日志信息。
 
-Launching via commandline:
+Launching via command line:
 - On MacOS, the binary is in `LoopyMSE.app/Contents/MacOS/LoopyMSE`.
 - Use `LoopyMSE --help` for information on commandline parameters.
 
