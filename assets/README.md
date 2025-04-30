@@ -84,6 +84,6 @@ If you download a build from GitHub, MacOS "quarantines" it as an unknown downlo
 
 **Please, only do the above steps if you know what you are doing, and you trust this executable.**
 
-## Wanwan Expansion Audio
+## Wanwan扩展音频包
 
-Currently, to emulate expansion PCM audio on Wanwan Aijou Monogatari, place numbered .wav files in a `pcm/` directory next to the Wanwan ROM.
+目前，若要模拟《Wanwan Aijou Monogatari》中的扩展 PCM 音频，需将编号的 .wav 文件放置在与《Wanwan Aijou Monogatari》ROM 文件同级目录下的 pcm/ 文件夹中。
