@@ -1,30 +1,31 @@
-# LoopyMSE-zh
-Casio Loopy模拟器。目前仍在开发中，已可运行商业游戏并支持音效。
+# LoopyMSE
+一款卡西欧 Loopy 游戏机模拟器。开发中，可运行商业游戏并支持音效。
 
-请务必遵守软件协议！
+## 功能特性
+- 可运行所有商业游戏，包括《魔法商店》
+- 高级打印机模拟（打印内容保存为 BMP 图片）
+- 音效模拟（尚未完成，详见下文）
+- 高级 PCM 扩展音频模拟
+- 支持键盘与手柄输入
+- 截图功能（保存为 BMP 图片）
+- 支持 Mac、Windows、Linux 平台
 
-特性：
-- 支持运行所有商业游戏，包括《Magical Shop》。
-- 支持声音。
-- 提供HLE打印机。
-- 支持PCM扩展音频HLE。
-- 支持控制器操作。
-- 兼容Mac、Windows和Linux平台。
-
-待添加特性:
+## 待实现功能
+- 应用内配置的图形化菜单
 - 鼠标模拟
-- 给代码添加注释，中英双语
-- 写一本Casio Loopy模拟器制作手册？（遥遥无期的梦想）
+- 部分游戏使用的内置“演示”背景音乐
+- 更完善/底层级的打印机模拟
 
-## 发行版
+## 构建版本
+可在 [Releases 页面](../../releases) 获取适用于 Linux、Windows、macOS Intel、macOS ARM64 的 LoopyMSE。
 
-[Github Actions](../../actions/) 为Linux、Windows、MacOS Intel和MacOS ARM64提供最新的编译发行版本。
+每次提交的滚动构建版本可在 [Github Actions](../../actions/) 下载。
 
-## 说明书
+## 使用方法
+参见 [Readme](assets/README.md)（已包含在发行包中）。
 
-参见 [Readme](assets/README.md) (included in builds).
-
-## 特别鸣谢
-kasami - 声音和打印机功能的实现，Dump BIOS固件，硬件测试，许多有价值的非代码形式的贡献。
-
-UBCH server - 翻译和精神支持
+## 致谢与特别感谢
+* PSI – 原版（上游）[LoopyMSE](https://github.com/PSI-Rockin/LoopyMSE) 项目作者
+* kasami – 逆向工程、精度优化、Bug 修复、音效与打印机实现、BIOS dump 提取
+* partlyhuman – 持续开发、测试、自动化构建、视觉与体验优化
+* UBCH Discord 服务器 – 文档整理与归档、翻译、精神支持
